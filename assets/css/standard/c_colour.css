@@ -1,0 +1,166 @@
+/*
+////////////////////////////////////////////////////////////////////////////////
+///   Colours and file resources (reskins) - def. viewport 320px wide        ///
+///                                                                          ///
+///   Queries: nicholas.bergquist@informa.com                                ///
+////////////////////////////////////////////////////////////////////////////////
+*/
+
+/* Generic DOM elements */
+body {
+	background: #454e69; 
+	color: #fff;
+}
+dt {
+	color: #333
+}
+header {
+	background: url(../../img/background_00.png) repeat 0 -6em;
+	border-bottom-color: #fff;
+}
+header p {
+	background: #f4f5f5 url(../../img/informa.png) no-repeat top right;
+	box-shadow: 0 1px 15px #333;
+	color: #785e73;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #9fb3c3;
+	text-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+h1 {
+	background: rgba(0, 0, 0, 0.1);
+	color: #fff;
+}
+h1 a {
+	background: url(../../img/logo_servicestatus_00.png) no-repeat 0 0;
+}
+h2 {
+	border-bottom-color: #9fb3c3
+}
+h3 {
+	background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+}
+
+/* class elements: =. */
+.anchor-contrast {
+	background:rgba(0, 0, 0, 0.2); 
+	border-radius:3px
+}
+.button {
+	background: #4b546e;
+	border-color: transparent;
+	border-radius: 10px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+.button:hover {
+	border-color: #a6bcc6;
+	transition: border-color 0.5s ease 0s;
+}
+.button.inactive {
+	box-shadow: none;
+}
+.button.inactive:hover {
+	border-color: transparent;
+}
+.menu-overview .down .button {
+	background: url(../../img/arrow_down_01.png) no-repeat 5px center, #4b546e;
+}
+.menu-overview .up .button {
+	background: url(../../img/arrow_up_01.png) no-repeat 5px center, #4b546e;
+}
+.menu-overview li {
+	border-radius: 10px;
+}
+.peity {
+	border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-left-color: rgba(0, 0, 0, 0.1);
+}
+.services li {
+	border-color: #fff;
+	border-radius: 5px;
+}
+.services.down .button {
+	background: url(../../img/e-mail_00_45x45.png) no-repeat left center, #4b546e;
+}
+.services.up .button {
+	background: url(../../img/e-mail_01_45x45.png) no-repeat left center, #4b546e;
+}
+.services.down li {
+	background: rgba(234, 99, 110, 0.75);
+}
+.services.up li {
+	background: rgba(93, 193, 177, 0.75);
+}
+
+/* pseudo-classes */
+:link, :visited {
+	color: #a6bcc6;
+}
+:link:hover, :visited:hover {
+	color: #a6bcc6;
+}
+.services h3 :link, .services h3 :visited {
+	color: #fff;
+}
+
+/* id elements: =# */
+
+
+
+
+/*   Media between 480 and 767                                     
+/*******************************************************************/
+@media only screen and (min-width: 480px) {
+	
+
+	/* class elements: =. */
+	
+}
+
+
+/*   Media between 768 and 899                                    
+/*******************************************************************/
+@media only screen and (min-width: 768px) { 
+	
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+}
+
+
+/*   Media between 1024 and 1279                                   
+/*******************************************************************/
+@media only screen and (min-width: 1024px) { 
+	
+
+	/* class elements: =. */
+	
+
+	/* id elements: =# */
+	
+
+}
+
+
+/*   Media between 1280 and above                                   
+/*******************************************************************/
+@media only screen and (min-width: 1280px) { 
+	header {
+		border-bottom-color: rgba(234, 99, 110, 0.9);
+	}
+	header h1 {
+		border-radius: 0 0 25px 25px;
+	}
+
+	/* class elements: =. */
+	
+
+	/* id elements: =# */
+
+
+}

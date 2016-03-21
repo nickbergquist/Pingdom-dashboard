@@ -1,0 +1,166 @@
+/*
+////////////////////////////////////////////////////////////////////////
+///   Page typography - default is for viewport 320px wide           ///
+///                                                                  ///
+///   Note: Contains layout properties where these are               ///
+///   calculated from font properties.                               ///
+///                                                                  ///
+///   Queries: nicholas.bergquist@informa.com                        ///
+////////////////////////////////////////////////////////////////////////
+*/
+
+/* Fonts */
+@font-face {
+    font-family: 'sanchezregular';
+    src: url('../../fonts/sanchez_regular_macroman/Sanchez-Regular-webfont.eot');
+    src: url('../../fonts/sanchez_regular_macroman/Sanchez-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/sanchez_regular_macroman/Sanchez-Regular-webfont.woff2') format('woff2'),
+         url('../../fonts/sanchez_regular_macroman/Sanchez-Regular-webfont.woff') format('woff'),
+         url('../../fonts/sanchez_regular_macroman/Sanchez-Regular-webfont.ttf') format('truetype'),
+         url('../../fonts/sanchez_regular_macroman/Sanchez-Regular-webfont.svg#sanchezregular') format('svg');
+}
+
+/* Generic DOM elements */
+body {
+	/* set base font size in % so that in IE the 'View > Text size' menu (useable with 'em' units) does not have  
+       large incremental step changes with 'em' units alone.
+	   
+       12px (desired base font size). 18px (1.5 x base font size) is desired base line-height.
+       (12px (desired base size) / 16px (def. browser size)) x 100 = 75%  */
+    font: 75%/1.5 Arial, Helvetica, sans-serif;
+}
+footer[role='contentinfo'] p {
+	font-size: 0.833em; /* 10px required so 10 / 12 = 0.833 */
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: sanchezregular;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+h1 {
+	font-size: 3.0em; /* 36px required so, 36 / 12 = 3 */
+    line-height: 1.2em; /* non-standard line height */
+}
+h2 {
+	font-size: 1.5em; /* 18px required so 18 / 12 = 1.5 */
+    line-height: 1.2em; /* non-standard line height */
+    margin-bottom: 0.6em; /* 1.2 x 0.5 = 0.6 */
+    margin-top: 1.8em; /* 1.2 x 1.5 = 1.8 */
+	text-align: center
+}
+h3 {
+	font-size: 1.167em; /* 14px required so, 14 / 12 = 1.167 */
+	line-height: 1.286em; /* standardised leading, 18 / 14 = 1.286 */
+	margin-bottom: 0.643em; /* 1.286 x 0.5 = 0.643 */
+    margin-top: 1.929em; /* 1.286 x 1.5 = 1.929 */
+}
+h4 {
+	font-size: 1em; /* 12px required so, 12 / 12 = 1 */
+	line-height: 1.5em; /* standardised leading, 18 / 12 = 1.5 */
+	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75 */
+	margin-top: 2.25em; /* 1.5 x 1.5 = 2.25 */
+}
+h5 {
+	font-size: 1em; /* 12px required so, 12 / 12 = 1 */
+	line-height: 1.5em; /* standardised leading, 18 / 12 = 1.5 */
+	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75 */
+	margin-top: 2.25em; /* 1.5 x 1.5 = 2.25 */
+}
+h6 {
+	font: 1em helvetica, arial, sans-serif; /* 12px required so, 12 / 12 = 1 */
+	line-height: 1.5em; /* standardised leading, 18 / 12 = 1.5 */
+	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75 */
+	margin-top: 2.25em; /* 1.5 x 1.5 = 2.25 */
+}
+h2:first-child, h3:first-child {
+	margin-top: 0;
+}
+
+/* class elements: =. */
+.anchor-contrast {
+	font-size: 95%
+}
+.button {
+	font: 1.5em sanchezregular; /* 18px required so, 18 / 12 = 1.5 */
+}
+
+/* pseudo-classes */
+:link, :visited {
+	text-decoration: none
+}
+:link:hover, :visited:hover {
+	text-decoration: underline
+}
+.button:link:hover, .button:visited:hover {
+	text-decoration: none
+}
+
+/* id elements: =# */
+
+
+
+/*   Media between 480 and 767                                     
+/*******************************************************************/
+@media only screen and (min-width: 480px) {
+	
+	
+	/* class elements: =. */
+	
+}
+
+
+/*   Media between 768 and 899                                     
+/*******************************************************************/
+@media only screen and (min-width: 768px) { 
+	
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+}
+
+
+/*   Media between 900 and 1023                                    
+/*******************************************************************/
+@media only screen and (min-width: 900px) { 
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+}
+
+
+/*   Media between 1024 and 1279                                   
+/*******************************************************************/
+@media only screen and (min-width: 1024px) { 
+	
+	
+
+	/* class elements: =. */
+	.button {
+		font-size: 1.0em;
+	}
+
+	/* id elements: =# */
+	
+
+}
+
+
+/*   Media between 1280 and above                                   
+/*******************************************************************/
+@media only screen and (min-width: 1280px) { 
+	
+	
+
+	/* class elements: =. */
+	
+
+	/* id elements: =# */
+	
+
+}

@@ -1,0 +1,328 @@
+/*
+/////////////////////////////////////////////////////////////////////
+///   Page layout - default is for viewport 320px wide            ///
+///                                                               ///
+///   Queries: nicholas.bergquist@informa.com                     ///
+/////////////////////////////////////////////////////////////////////
+*/
+
+
+/*  Default 320px media width                                      
+/*******************************************************************/
+/*body:before { content: "Media between 320 and 479"; }*/
+
+/* Generic DOM elements */
+html {
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; /* not inherited by default */
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit; -moz-box-sizing: inherit; box-sizing: inherit; /* apply desired box model to all but allowing local change */
+}
+body {
+    min-width: 320px; /* fix the minimum width */
+}
+dd {
+	float: right;
+	width: auto
+}
+dl {
+	margin-bottom: 0.75em;
+    overflow: hidden;
+	padding: 0 1em;
+}
+dt {
+	clear: left;
+	float: left;
+	width: auto
+}
+dt:after {
+	content: ":";
+}
+footer {
+	padding: 0 1.67%;
+}
+header, footer, main, section {
+	margin-bottom: 1.5em;
+}
+header {
+	border-bottom: 5px solid;
+	overflow: hidden;
+	position: relative
+}
+header h1 {
+	padding: 1.0em 1.67% 0.25em; /* 10px either side at full width: 20/1200 x 100 = 1.67 */
+}
+header p {
+    padding: 0.25em 1.67%;
+	position: absolute;
+    top: 0;
+    width: 100%;
+}
+h2 {
+	border-bottom: 1px solid;
+	padding-bottom: 0.5em
+}
+h3 {
+    padding: 0.5em 1em;
+}
+main {
+	margin: 0 auto;
+}
+p, li, article, figcaption {
+	margin-bottom: 0.75em; /* 1.5 x 0.5 = 0.75, where 1.5 = def. body line-height & 0.5 = proportion allocated for bottom margins */ 
+}
+section {
+	overflow: hidden;
+	padding: 0 1.67%;
+}
+
+/* class elements: =. */
+.anchor-image a {
+	display: block;
+    height: 100%;
+    overflow: hidden;
+    text-indent: -999em;
+}
+header h1.anchor-image a {
+	height: 65px;
+	width: 280px;
+}
+.anchor-contrast {
+	padding:0 3px;
+}
+.button {
+	border: 1px solid;
+	padding: 7px 10px 7px 40px;
+}
+.button.inactive {
+	display: block;
+    height: 100%
+}
+.hide {  /* invisible & inaudible */
+    display: none; 
+    visibility: hidden 
+}
+.menu-general a {
+    display: block;
+    height: 100%
+}
+.menu-general li {
+    width: auto;
+}
+.menu-horiz li {
+	float: left;
+}
+.menu-overview {
+	display: table;
+	margin: 0 auto;
+}
+.menu-overview li {
+	margin-right: 1em;
+	min-width: 12em;
+}
+.menu-overview li:last-child {
+	margin-right:0; 
+}
+.off-screen {  /* invisible only */
+    height: 1px;
+    left: -999em;
+    overflow: hidden;
+    position: absolute;
+    width: 1px
+}
+.peity {
+	border-bottom: 1px solid;
+    border-left: 1px solid;
+	display: block;
+	margin: 0 auto;
+	width: 250px;
+}
+.services dd:not(:last-of-type), .services dt:not(:last-of-type) {
+	height: 1px;
+    left: -999em;
+    overflow: hidden;
+    position: absolute;
+    width: 1px
+}
+.services li {
+	border: 2px solid;
+	margin-bottom: 1em;
+	position: relative
+}
+.services li {
+	min-height: 16.5em;
+}
+.services .button {
+	bottom: 0.75em;
+	margin-right: 0.6em;
+	position: absolute;
+	right: 0;
+}
+.string-long-break {
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* same as 'overflow-wrap' but included for legacy reasons, see http://www.w3.org/TR/css-text-3/#overflow-wrap-property */
+
+  /* hyphenate on the word breaks */
+  -ms-hyphens: auto; -moz-hyphens: auto; -webkit-hyphens: auto; hyphens: auto;
+}
+.string-overflow-ellipsis {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+/* id elements: =# */
+
+
+
+/*   Media between 480 and 767                                     
+/*******************************************************************/
+@media only screen and (min-width: 480px) {
+	/*body:before { content: "Media between 480 and 767"; }*/
+	
+	
+	/* class elements: =. */
+	.peity {
+        width: 200px;
+    }
+    .services li {
+		float: left;
+		margin-right: 1%; 
+		width: 49.5%;
+	}
+	.services li:nth-child(2n-2) {
+		margin-right: 0;
+	}
+	
+	/* id elements: =# */
+	
+
+}
+
+
+/*   Media between 768 and 899                                     
+/*******************************************************************/
+@media only screen and (min-width: 768px) { 
+	/*body:before { content: "Media between 768 and 899"; }*/
+	
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+	
+}
+
+
+/*   Media between 900 and 1023                                    
+/*******************************************************************/
+@media only screen and (min-width: 900px) { 
+	/*body:before { content: "Media between 900 and 1023"; }*/
+	
+	
+	/* class elements: =. */
+	
+	
+	/* id elements: =# */
+	
+	
+}
+
+
+/*   Media between 1024 and 1279                                   
+/*******************************************************************/
+@media only screen and (min-width: 1024px) { 
+	/*body:before { content: "Media between 1024 and 1279"; }*/
+	
+
+	/* class elements: =. */
+	.button {
+		padding: 10px 10px 10px 40px;
+	}
+	.services .button {
+		bottom: 1.0em;
+		margin-right: 0.9em;
+	}
+	.services li {
+		min-height: 15.0em;
+		width: 32.65%;
+	}
+	.services li:nth-child(2n-2) {
+		margin-right: 1%;
+	}
+	.services li:nth-child(3n-3) {
+		margin-right: 0;
+	}
+
+	/* id elements: =# */
+	
+
+}
+
+
+/*   Media between 1280 and 1919                                   
+/*******************************************************************/
+@media only screen and (min-width: 1280px) { 
+	/*body:before { content: "Media 1280 and above"; }*/
+	header > h1, header p {
+		margin: 0 auto;
+		width: 96% 
+	}
+	header, footer, main {
+		padding: 0 0 1.5em;
+	}
+	footer, main {
+		margin: 0 auto;
+		width: 94%
+	}
+	header p {
+		left: 50%;
+		margin-left: -48%; /* centred absolutely positioned element */
+	}
+	section {
+		padding: 0;
+	}
+
+	/* class elements: =. */
+	.services li {
+		width: 24.25%;
+	}
+	.services li:nth-child(3n-3) {
+		margin-right: 1%;
+	}
+	.services li:nth-child(4n-4) {
+		margin-right: 0;
+	}
+
+	/* id elements: =# */
+	
+}
+
+
+/*   Media between 1920 and above                                   
+/*******************************************************************/
+@media only screen and (min-width: 1920px) { 
+	body:before { content: "Media 1920 and above"; }
+	header > h1, header p {
+		width: 1840px /* fixed-width layout - fit in widescreen aspect ratio of 16:9 */
+	}
+	footer, main {
+		width: 1800px
+	}
+	header p {
+		margin-left: -920px; /* centred absolutely positioned element */
+	}
+
+	/* class elements: =. */
+	.services li {
+		width: 15.83%;
+	}
+	.services li:nth-child(4n-4) {
+		margin-right: 1%;
+	}
+	.services li:nth-child(6n-6) {
+		margin-right: 0;
+	}
+}

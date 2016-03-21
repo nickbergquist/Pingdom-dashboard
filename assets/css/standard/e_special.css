@@ -1,0 +1,11 @@
+/*
+////////////////////////////////////////////////////////////////////////
+///   Supplementary CSS - third-party component overrides            ///
+///                                                                  ///
+///   Queries: nicholas.bergquist@informa.com                        ///
+////////////////////////////////////////////////////////////////////////
+*/
+
+@-ms-viewport{
+	width: device-width;
+}
